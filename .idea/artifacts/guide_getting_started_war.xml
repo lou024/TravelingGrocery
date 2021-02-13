@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="guide-getting-started:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>guide-getting-started</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="guide-getting-started.war">
+      <element id="artifact" artifact-name="guide-getting-started:war exploded" />
+    </root>
+  </artifact>
+</component>
