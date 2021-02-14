@@ -1,6 +1,7 @@
 const endpoints = [
   "http://localhost:9080/mork",
-  "http://localhost:9080/treu/get"
+  "http://localhost:9080/treu/get",
+  "http://localhost:9080/lou/ping"
 ]
 
 const pingServices = () => {
