@@ -1,5 +1,6 @@
 const endpoints = [
-  "http://localhost:9080/mork"
+  "http://localhost:9080/mork",
+  "http://localhost:9080/treu/get"
 ]
 
 const pingServices = () => {
@@ -25,7 +26,7 @@ const pingServices = () => {
     const div = document.querySelector('._results');
     div.innerHTML = '';
     vals.forEach((r) => {
-      div.innerHTML += `[${r.status}] ${r.url} :: ${r.res}`;
+      div.innerHTML += `[${r.status}] ${r.url} :: ${r.res}<br/>`;
     });
   })
 };
