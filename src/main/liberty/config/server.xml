@@ -1,7 +1,9 @@
 <server description="Engine Hello World">
     <featureManager>
+        <feature>beanValidation-2.0</feature>
+    		<feature>mpConfig-1.2</feature>
+    		<feature>passwordUtilities-1.0</feature>
         <feature>jaxrs-2.1</feature>
-        <feature>jsonp-1.1</feature>
         <feature>cdi-2.0</feature>
     </featureManager>
 
