@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xml:lang="en" lang="en">
+<head>
+ <style>
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+ </style>
+</head>
+<body>
+<h:form action="http://localhost:9090/">
+    <p>
+        Email
+        <h:inputText id="email" value="#{loginBean.email}" required="true"/>
+    </p>
+    <p>
+        Username
+        <h:inputText id="username" value="#{loginBean.username}" required="true"/>
+    </p>
+    <p>
+        Password
+        <h:inputSecret id="password" value="#{loginBean.password}" required="true"/>
+    </p>
+    <p>
+        <!-- Redirect to login page -->
+        <h:commandButton value="Create Account" type="submit"
+                         action="#{loginBean.createAccount()}"
+                         class="button"
+                         onclick="window.location.href = 'http://localhost:9090/';">
+        </h:commandButton>
+        <a class="button" href="..">Go Back To Index</a>
+    </p>
+</h:form>
+</body>
+</html>
