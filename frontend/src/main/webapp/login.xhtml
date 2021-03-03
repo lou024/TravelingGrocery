@@ -21,6 +21,23 @@
   xmlns:jsf="http://xmlns.jcp.org/jsf"
   xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <title> Security Login Page </title>
+<head>
+ <style>
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+ </style>  
+</head>
 <body>
   <h2>Form Login</h2>
   <h:form id="loginform">
@@ -34,9 +51,10 @@
     </p>
     <p>
       <h:commandButton value="Login" type="submit"
+        class="button"
         action="#{loginBean.doLogin()}">
       </h:commandButton>
-      <a href="..">Go Back To Index</a>
+      <a class="button" href="..">Go Back To Index</a>
     </p>
   </h:form>
   <script type="text/javascript">
