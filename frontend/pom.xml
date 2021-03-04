@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.csc480.travelinggrocery</groupId>
-    <artifactId>travelinggrocery-frontend</artifactId>
+    <artifactId>frontend</artifactId>
     <version>0.2</version>
     <packaging>war</packaging>
 
